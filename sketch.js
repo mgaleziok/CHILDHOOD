@@ -10,6 +10,12 @@ function setup() {
   createCanvas(1920, 1080); // stwórz płótno
   stroke('red'); // czerwony kolor linii
   strokeWeight(40); // grubość linii
+  let button = createButton("i'm done");
+  button.position(960, 900);
+
+  // Call repaint() when the button is pressed.
+  button.mousePressed(repaint);
+
 }
 
 function draw() {
@@ -48,4 +54,11 @@ function draw() {
   point(450, 100);
   stroke('#8b6e68');
   point(450, 150);
+
+}
+
+
+function repaint() {
+  window.location.href="https://postupalskasasha.github.io/zirochka/"
+
 }
